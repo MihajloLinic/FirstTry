@@ -17,11 +17,17 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onBtnClick (android.view.View view){
-        EditText edtTxtName=findViewById(R.id.edtTxtName);
+
+    public void onBtnClick(android.view.View view) {
 
 
-        TextView txtHello=findViewById(R.id.txtMassage);
+        EditText edtTxtName = findViewById(R.id.edtTxtName);
+
+        TextView txtHello = findViewById(R.id.txtMassage);
+
+
+        txtHello.setText(edtTxtName.getText().toString());
+
         txtHello.setText(edtTxtName.getText().toString());
 
     }
